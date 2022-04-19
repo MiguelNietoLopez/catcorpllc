@@ -1,23 +1,13 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import {headerHtml, footerHtml} from '../common/common.js';
 class Home extends React.Component {
     constructor(props)
     {
         super(props);
         
-    }
-    headerHtml() {
-        return <div id="header">
-        <ul id="navbar">
-            <li className="navItem"><div id="logo">Cat Corp LLC.</div></li>
-            <li className="navItem" id="contactLink"><Link href="/contact">Contact Us</Link></li>
-            <li className="navItem" id="solutionsLink"><Link href="/solutions">Solutions</Link></li>
-            <li className="navItem" id="aboutLink"><Link href="/about">About Us</Link></li>
-        </ul>
-    </div>;
-    };
-    
+    }   
     leftHtml() {
         return <div id="leftPage">
         <ul id="Reviews">
@@ -43,24 +33,14 @@ class Home extends React.Component {
     </div>;
     };
     
-    footerHtml (){
-        return <div id="footer">
-        <ul id="footerbar">
-            <li className="navItem"><div id="logo">Cat Corp LLC.</div></li>
-            <li className="navItem" id="contactLink"><a>Contact Us</a></li>
-            <li className="navItem" id="solutionsLink"><a>Solutions</a></li>
-            <li className="navItem" id="aboutLink"><a>About Us</a></li>        
-        </ul>
-    </div>;
-    };
     render()
     {
         return(
         <div id="home">
-            {this.headerHtml()}
+            {headerHtml()}
             {this.leftHtml()}
             {this.centerHtml()}
-            {this.footerHtml()}
+            {footerHtml()}
         </div>
         );
     };
@@ -71,4 +51,4 @@ function HomePage() {
     return <Home />;
 };
 
-export default HomePage
+export default HomePage;
