@@ -17,6 +17,12 @@
   "keywords": [
     "catcorpllc"
   ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+ },
   "author": "Miguel Nieto Lopez",
   "license": "SEE LICENSE",
   "bugs": {
