@@ -1,3 +1,3 @@
 Cat Corp LLC.
 =============
-for License information please reaad the included license
+for License information please read the included license
