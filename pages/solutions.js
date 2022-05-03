@@ -1,6 +1,15 @@
-function Solutions() {
-    return (<div id="solutions">test</div>)
+class SolutionsApp extends React.Component{
+    constructor(props){
+        super(props);
+    };
+    render(){
+        return(
+            <div id="solutionsAppMain">
+                {Header()}
+                {Footer()}
+            </div>
+        )
+    }
 }
 
-
-export default Solutions;
+ReactDOM.render(<SolutionsApp />, document.getElementById('root'));

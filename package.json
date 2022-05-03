@@ -1,32 +1,22 @@
 {
   "name": "catcorpllc",
   "version": "1.0.0",
-  "description": "Cat Corp LLC website stack",
+  "description": "catcorpllc website",
   "main": "server.js",
-  "dependencies": {
-    "express": "^4.17.3",
-    "next": "^12.1.4",
-    "node": "^17.7.1",
-    "react": "^17.0.2",
-    "react-dom": "^18.0.0"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/MiguelNietoLopez/catcorpllc.git"
   },
-  "keywords": [
-    "catcorpllc"
-  ],
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "next",
-    "build": "next build",
-    "start": "next start"
- },
   "author": "Miguel Nieto Lopez",
-  "license": "SEE LICENSE",
+  "license": "See License",
   "bugs": {
     "url": "https://github.com/MiguelNietoLopez/catcorpllc/issues"
   },
-  "homepage": "https://github.com/MiguelNietoLopez/catcorpllc#readme"
+  "homepage": "https://github.com/MiguelNietoLopez/catcorpllc#readme",
+  "dependencies": {
+    "express": "^4.18.0",
+    "node": "^17.7.2",
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0"
+  }
 }

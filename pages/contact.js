@@ -1,6 +1,15 @@
-function Contact() {
-    return (<div id="contact">test</div>)
+class ContactApp extends React.Component{
+    constructor(props){
+        super(props);
+    };
+    render(){
+        return(
+            <div id="contactAppMain">
+                {Header()}
+                {Footer()}
+            </div>
+        )
+    }
 }
 
-
-export default Contact;
+ReactDOM.render(<ContactApp />, document.getElementById('root'));
