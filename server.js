@@ -21,6 +21,26 @@ app.get('/common/header.js', (req, res) => {
     res.setHeader('Content-Type', 'text/babel');
     res.sendFile(__dirname + '/common/header.js');
 })
+app.get('/common/footer.js', (req, res) => {
+    res.setHeader('Content-Type', 'text/babel');
+    res.sendFile(__dirname + '/common/footer.js');
+})
+app.get('/contact', (req, res) => {
+    res.setHeader('Content-Type', 'text/html');
+    res.sendFile(__dirname + '/pages/contact.html')
+})
+app.get('/pages/contact.js', (req, res) => {
+    res.setHeader('Content-Type', 'text/babel');
+    res.sendFile(__dirname + '/pages/contact.js');
+})
+app.get('/solutions', (req, res) => {
+    res.setHeader('Content-Type', 'text/html');
+    res.sendFile(__dirname + '/pages/solutions.html')
+})
+app.get('/pages/solutions.js', (req, res) => {
+    res.setHeader('Content-Type', 'text/html');
+    res.sendFile(__dirname + '/pages/solutions.js')
+})
 var server = app.listen(3000, () => {
     var host = server.address().address;
     var port = server.address().port;
