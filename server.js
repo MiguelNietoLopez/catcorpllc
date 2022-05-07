@@ -1,4 +1,5 @@
 var express = require('express');
+const { url } = require('inspector');
 const path = require('path');
 var app = express();
 app.get('/', function(req, res) {
@@ -40,6 +41,9 @@ app.get('/solutions', (req, res) => {
 app.get('/pages/solutions.js', (req, res) => {
     res.setHeader('Content-Type', 'text/html');
     res.sendFile(__dirname + '/pages/solutions.js')
+})
+app.get('/common/images/catoilpainting1.jpg', (req, res) => {
+    res.sendFile(__dirname + "/common/images/catoilpainting1.jpg");
 })
 var server = app.listen(3000, () => {
     var host = server.address().address;
