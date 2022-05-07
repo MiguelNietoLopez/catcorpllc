@@ -2,14 +2,37 @@ class AboutApp extends React.Component{
     constructor(props){
         super(props);
     };
+    getDate() {
+        let date = new Date();
+        let month = date.getMonth() + 1;
+        let day = date.getDate();
+        let year = date.getFullYear();
+        return `0${month}\\${day}\\${year}`;
+    }
     render(){
         return(
             <div id="aboutAppRoot">
                 {Header()}
-                <p id="mainPara">
-                    CatCorpLLC is the leading cat run software development firm.
-                    Our solutions meet and exceed client expectations and requirements.
-                    For information about our solutions see <a href="/solutions">Solutions</a>.
+                <h1 id="mainHeader">About CatCorp LLC</h1>
+                <h3 id="historyH3">Our History</h3>
+                <p id="historyPara">
+                        CatCorpLLC was founded in 1305 by Gregory Von Johnsonsmithersonottenbotten 
+                    <img src="/common/images/catoilpainting1.jpg" alt="Oil Painting of CatCorpLLC founder Gregory Von Johnsonsmithersonottenbotten" />
+                    He created the company for the purpose of writing and printing books since it was at the time very profitable. 
+                    The company evolved and followed the printed word until 1978 when the last book was published. The company switched
+                    to software development and web page design for cats by cats.
+                </p>
+                <h3 id="todayH3">Us Today</h3>
+                <p id="todayPara">
+                        Today, Cat Corp LLC still develops software and web pages for cats.
+                    We have worked closely with the Secret Cat Government that controls the world.
+                    CatCorpLLC developed the SCG, Secret Cat Government, website, several classified project, and the global cat comunication app.
+                    However, Cat Corp LLC has also worked with humans and developing for them.
+                    Cat Corp LLC values Transparency, Equality, and pushing forward the secret cat world domination agenda.
+                </p>
+                <h3 id="statsH3">Project Count</h3>
+                <p id="statsPara">
+                    As Of {this.getDate()}, Cat Corp LLC has created 67,700,234 Websites, 34,502,234 Programs, 45,403,222 Mobile Apps, and 4 Cat Militias
                 </p>
                 {Footer()}
             </div>
