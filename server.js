@@ -2,6 +2,7 @@ var express = require('express');
 const { url } = require('inspector');
 const path = require('path');
 var app = express();
+app.use(express.json());
 app.get('/', function(req, res) {
     res.setHeader('Content-Type', 'text/html');
     res.sendFile(__dirname + '/pages/index.html');
@@ -44,6 +45,10 @@ app.get('/pages/solutions.js', (req, res) => {
 })
 app.get('/common/images/catoilpainting1.jpg', (req, res) => {
     res.sendFile(__dirname + "/common/images/catoilpainting1.jpg");
+})
+app.post('/api/contact_submit', (req, res) => {
+    console.log(req.body);
+    res.status(200);
 })
 var server = app.listen(3000, () => {
     var host = server.address().address;
