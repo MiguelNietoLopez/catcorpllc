@@ -1,6 +1,6 @@
 var express = require('express');
-const { url } = require('inspector');
-const path = require('path');
+var fs = require('fs');
+var url = require('url'); 
 var app = express();
 app.use(express.json());
 app.get('/', function(req, res) {
@@ -19,14 +19,6 @@ app.get('/pages/about.js', (req,res) => {
     res.setHeader("Content-Type", 'text/babel');
     res.sendFile(__dirname + '/pages/about.js');
 })
-app.get('/common/header.js', (req, res) => {
-    res.setHeader('Content-Type', 'text/babel');
-    res.sendFile(__dirname + '/common/header.js');
-})
-app.get('/common/footer.js', (req, res) => {
-    res.setHeader('Content-Type', 'text/babel');
-    res.sendFile(__dirname + '/common/footer.js');
-})
 app.get('/contact', (req, res) => {
     res.setHeader('Content-Type', 'text/html');
     res.sendFile(__dirname + '/pages/contact.html')
@@ -43,12 +35,16 @@ app.get('/pages/solutions.js', (req, res) => {
     res.setHeader('Content-Type', 'text/html');
     res.sendFile(__dirname + '/pages/solutions.js')
 })
-app.get('/common/images/catoilpainting1.jpg', (req, res) => {
-    res.sendFile(__dirname + "/common/images/catoilpainting1.jpg");
-})
-app.post('/api/contact_submit', (req, res) => {
-    console.log(req.body);
-    res.status(200);
+app.get(/.common/, (req, res) => {
+    console.log(req.path);
+    if(fs.existsSync(__dirname + req.path) == true)
+    {
+        res.sendFile(__dirname + req.path);
+    }
+    else {
+        res.statusCode = 301;
+    }
+    
 })
 var server = app.listen(3000, () => {
     var host = server.address().address;
