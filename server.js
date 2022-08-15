@@ -15,6 +15,10 @@ app.get('/pages/index.js', (req, res) => {
     res.setHeader("Content-Type", "text/babel");
     res.sendFile(__dirname + '/pages/index.js');
 });
+app.get('/pages/index.css', (req, res) => {
+    res.setHeader("Content-Type", 'text/css');
+    res.sendFile(__dirname + '/pages/index.css')
+});
 app.get('/pages/about.js', (req,res) => {
     res.setHeader("Content-Type", 'text/babel');
     res.sendFile(__dirname + '/pages/about.js');
