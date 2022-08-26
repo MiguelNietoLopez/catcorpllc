@@ -1,3 +1,58 @@
-#indexApp{
+html{
+    max-width: 100%;
+    width: 100vw;
+    padding: 0;
+    margin: 0;
+}
+body {
+    padding: 0;
+    margin: 0;
+}
+#indexApp {
+    display: grid;
+    grid-template-areas: 
+    'header'
+    'center'
+    'footer';  
+}
+#title{
+    text-align: center;
+}
+#subtitle
+{
+    text-align: center;
+}
+#header{
+    position: fixed;
+    height: 10vh;
+    width: 100%;    
+    opacity: 0;
+    background-color: red;
+    grid-area: 'header';
+}
+#header:hover {
+    height: 10vh;
+    width: 100%;    
+    position: fixed;
+    opacity:1;
+    background-color: red;
+    grid-area: 'header';
+}
+#footer {
+    width: 100%;    
+    background-color: red;
+    grid-area: 'footer';
+}
+#centerContent{
+    margin-top: 10vh;
+    grid-area: 'center';
     background-color: blue;
+}
+#img1{
+    height: 20%;
+    width: 100%;    
+}
+#img2{
+    height: 20%;
+    width: 100%;    
 }
