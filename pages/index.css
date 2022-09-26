@@ -22,21 +22,26 @@ body {
 {
     text-align: center;
 }
-#header{
-    position: fixed;
+#header {
     height: 10vh;
-    width: 100%;    
-    opacity: 0;
+    width: 100vw;    
+    position: fixed;
     background-color: red;
     grid-area: 'header';
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
-#header:hover {
-    height: 10vh;
-    width: 100%;    
-    position: fixed;
-    opacity:1;
-    background-color: red;
-    grid-area: 'header';
+#header .item {
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 4vh;
+    padding-bottom: 4vh;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    border: 1%;
+    border-style: solid;
 }
 #footer {
     width: 100%;    
