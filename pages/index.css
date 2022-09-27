@@ -5,6 +5,7 @@ html{
     margin: 0;
 }
 body {
+    background-color: #DCE0EB;
     padding: 0;
     margin: 0;
 }
@@ -26,8 +27,16 @@ body {
     height: 10vh;
     width: 100vw;    
     position: fixed;
-    background-color: red;
+    background-color: #6A7865;
     grid-area: 'header';
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#footer {
+    height: 10vh;
+    width: 100vw;    
+    grid-area: 'footer';
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -39,19 +48,25 @@ body {
     padding-bottom: 4vh;
     text-align: center;
     text-decoration: none;
-    color: black;
-    border: 1%;
-    border-style: solid;
+    color: #7AA7D2;
 }
-#footer {
-    width: 100%;    
-    background-color: red;
-    grid-area: 'footer';
+#footer .item {
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 4vh;
+    padding-bottom: 4vh;
+    text-align: center;
+    text-decoration: none;
+    color: #7AA7D2;
+}
+#header .item:hover {
+    color: #A8C9EA;
+    background-color: #95A59E;
 }
 #centerContent{
     margin-top: 10vh;
     grid-area: 'center';
-    background-color: blue;
+    background-color: #DCE0EB;
 }
 #img1{
     height: 20%;
