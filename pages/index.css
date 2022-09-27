@@ -64,15 +64,23 @@ body {
     background-color: #95A59E;
 }
 #centerContent{
+    display: block;
     margin-top: 10vh;
     grid-area: 'center';
     background-color: #DCE0EB;
 }
-#img1{
+.img{
+    display: block;
     height: 20%;
-    width: 100%;    
+    width: 80%;
+    margin: auto;
 }
-#img2{
-    height: 20%;
-    width: 100%;    
+#title{
+    height: 20vmin;
+    width: 100%;
+    font-size: 10vmin;
+    text-align: center;
+    line-height: 20vmin;
+    margin-top: 0;
+    margin-bottom: 0;
 }
