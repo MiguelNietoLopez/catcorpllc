@@ -7,7 +7,7 @@ class AboutApp extends React.Component{
         let month = date.getMonth() + 1;
         let day = date.getDate();
         let year = date.getFullYear();
-        return `0${month}\\${day}\\${year}`;
+        return `${month}\\${day}\\${year}`;
     }
     render(){
         return(
