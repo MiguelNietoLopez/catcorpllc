@@ -35,7 +35,7 @@ body {
 }
 
 
-@media screen and (orientation: landscape){
+@media screen and (min-width: 769px) {
     #title{
         height: auto;
         width: 100%;
@@ -109,6 +109,14 @@ body {
     margin-bottom: 15vh;
 
 }
+#centerContent{
+    display: block;
+    margin-top: 10vh;
+    grid-area: 'center';
+    background-color: #DCE0EB;
+    font-size: 3vw;
+    text-align: center;
+}
 #centerContent .imgTitle{
     margin-bottom: 0;
 }
@@ -125,7 +133,7 @@ body {
     margin: auto;
 }
 }
-@media screen and (orientation: portrait)
+@media screen and (max-width: 768px)
 {
     #title{
         height: auto;
