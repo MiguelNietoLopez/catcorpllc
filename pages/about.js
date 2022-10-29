@@ -11,10 +11,11 @@ class AboutApp extends React.Component{
     }
     render(){
         return(
-            <div id="aboutAppRoot">
+            <div id="aboutApp">
                 {Header()}
-                <h1 id="mainHeader">About CatCorp LLC</h1>
-                <h3 id="historyH3">Our History</h3>
+                    <div id="centerContent">
+                    <h1 id="title">About CatCorp LLC</h1>
+                <h3 id="subtitle">Our History</h3>
                 <p id="historyPara">
                         CatCorpLLC was founded in 1305 by Gregory Von Johnsonsmithersonottenbotten 
                     <img src="/common/images/catoilpainting1.jpg" alt="Oil Painting of CatCorpLLC founder Gregory Von Johnsonsmithersonottenbotten" />
@@ -22,7 +23,7 @@ class AboutApp extends React.Component{
                     The company evolved and followed the printed word until 1978 when the last book was published. The company switched
                     to software development and web page design for cats by cats.
                 </p>
-                <h3 id="todayH3">Us Today</h3>
+                <h3 id="subtitle">Us Today</h3>
                 <p id="todayPara">
                         Today, Cat Corp LLC still develops software and web pages for cats.
                     We have worked closely with the Secret Cat Government that controls the world.
@@ -30,10 +31,11 @@ class AboutApp extends React.Component{
                     However, Cat Corp LLC has also worked with humans and developing for them.
                     Cat Corp LLC values Transparency, Equality, and pushing forward the secret cat world domination agenda.
                 </p>
-                <h3 id="statsH3">Project Count</h3>
+                <h3 id="subtitle">Project Count</h3>
                 <p id="statsPara">
                     As Of {this.getDate()}, Cat Corp LLC has created 67,700,234 Websites, 34,502,234 Programs, 45,403,222 Mobile Apps, and 4 Cat Militias
                 </p>
+                    </div>
                 {Footer()}
             </div>
         )
