@@ -9,3 +9,20 @@
     'center'
     'footer';  
 }
+.header {
+    margin-top: 20vw;
+    margin-bottom: 2vw;
+}
+.centerText{
+    margin-top: 0;
+}
+#statsPara{
+    margin-bottom: 20vw;
+}
+#historyPara{
+    margin-top: 10vw;
+}
+.img{
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+}
