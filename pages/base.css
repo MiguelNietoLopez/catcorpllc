@@ -15,9 +15,6 @@ body {
     max-width: 100%;
     color: #7AA7D2;
 }
-#footer .item:hover{
-    background-color: rgba(0,0,0,0.1);
-}
 
 #header .item:hover {
     color: #A8C9EA;
@@ -78,19 +75,7 @@ body {
         margin: 0;
         padding: 0;
     }
-    #header .item {
-        display:flex;
-        width: 25%;
-        height: 100%;
-        justify-content: center;
-        text-decoration: none;
-        color: #DCE0EB;
-        font-size: 100%;
-        line-height: 100%;
-        margin: 0;
-        align-items: center;
-        font-size: 4vmax;
-    }
+
     #centerContent{
         display: block;
         margin-top: 10vh;
@@ -136,18 +121,6 @@ body {
         align-items: center;
         margin-top: 10vh; 
     }
-    #footer .item {
-        font-size: 3vmax;
-        width: 25%;
-        height: 100%;
-        text-decoration: none;
-        color: #7AA7D2;
-        margin: 0;
-        line-height: 100%;
-        display:flex;
-        justify-content: center;
-        align-items: center;
-        }
     #header {
         position: fixed;
         height: 5vmax;

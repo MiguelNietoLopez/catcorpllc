@@ -1,0 +1,11 @@
+@import '/pages/base.css';
+#solutionsApp {
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-areas: 
+    'header'
+    'center'
+    'footer';  
+}
