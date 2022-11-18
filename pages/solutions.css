@@ -9,3 +9,28 @@
     'center'
     'footer';  
 }
+.button {
+    height: 40vmax;
+    width: 18.75vmax;
+    position: absolute;
+    top: 0;
+    background-color: rgba(1,1,1,0);
+    border: 0;
+    color: rgba(0,0,0,0);
+    font-size: 10vmax;
+}
+.button:hover {
+    color: rgba(255, 255, 255, 0.4);
+}
+#leftButton{
+    transform: translate(-37.6vmax, 0);
+    -ms-transform: translate(-37.6vmax, 0);
+}
+#rightButton{
+    transform: translate(18.75vmax, 0);
+    -ms-transform: translate(18.75vmax, 0); 
+}
+#imgDiv {
+    position: relative;
+    width: 100%;
+}

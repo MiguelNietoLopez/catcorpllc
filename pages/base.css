@@ -20,6 +20,9 @@ body {
     color: #A8C9EA;
     background-color: #95A59E;
 }
+#header{
+    z-index: 1000;
+}
 @media screen and (max-width: 768px){
     #title{
         height: auto;
