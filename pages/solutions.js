@@ -59,6 +59,7 @@ class SolutionsApp extends React.Component{
                         <li className="webdevelopmentlistitem">CI/CD</li>
                         <li className="webdevelopmentlistitem">Full Stack</li>
                     </ul>
+                    <h2 id="devshowcaseheader" class="header">Developer Showcase</h2>
                     <div id="imgDiv">
                         <img className="img" src={this.state.devArray[this.state.devArrayPos].imgSrc}></img>
                         <button className="button" id="leftButton" onClick={() => this.updateDevPos(0)}>{'<'}</button>

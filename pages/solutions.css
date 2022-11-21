@@ -34,3 +34,9 @@
     position: relative;
     width: 100%;
 }
+#devshowcaseheader{
+    margin-top: 20vmax;
+}
+#devdescription{
+    margin-bottom: 10vmax;
+}
