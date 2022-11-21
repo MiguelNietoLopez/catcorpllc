@@ -46,13 +46,23 @@ app.get(/.common/, (req, res) => {
         res.sendFile(__dirname + req.path);
     }
     else {
-        res.statusCode = 301;
+        res.statusCode = 404;
+    }
+    
+})
+app.get(/.pages/, (req, res) => {
+    console.log(req.path);
+    if(fs.existsSync(__dirname + req.path) == true)
+    {
+        res.sendFile(__dirname + req.path);
+    }
+    else {
+        res.statusCode = 404;
     }
     
 })
 var server = app.listen(3000, () => {
     var host = server.address().address;
     var port = server.address().port;
-
     console.log('test');
 })
