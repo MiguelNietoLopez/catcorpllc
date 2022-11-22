@@ -109,7 +109,7 @@ body {
     .img{
         display: block;
         height: 40vmax;
-        width: 75vmax;
+        width: 100%;
         margin: auto;
     }
     #header .item {
@@ -176,8 +176,8 @@ body {
 }
 .img{
     display: block;
-    height: 40vmax;
-    width: 75vmax;
+    height: 60vmax;
+    width: 100%;
     margin: auto;
 }
 }

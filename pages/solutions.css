@@ -10,8 +10,8 @@
     'footer';  
 }
 .button {
-    height: 40vmax;
-    width: 18.75vmax;
+    height: 60vmax;    
+    width: 25%;
     position: absolute;
     top: 0;
     background-color: rgba(1,1,1,0);
@@ -23,12 +23,12 @@
     color: rgba(255, 255, 255, 0.4);
 }
 #leftButton{
-    transform: translate(-37.6vmax, 0);
-    -ms-transform: translate(-37.6vmax, 0);
-}
+    transform: translate(-200%, 0);
+    -ms-transform: translate(-200%, 0);
+} 
 #rightButton{
-    transform: translate(18.75vmax, 0);
-    -ms-transform: translate(18.75vmax, 0); 
+    transform: translate(100%, 0);
+    -ms-transform: translate(100%, 0); 
 }
 #imgDiv {
     position: relative;
