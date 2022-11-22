@@ -7,7 +7,7 @@ class IndexApp extends React.Component {
     }
     render(){
         return(
-            <div id="indexApp">
+            <main id="indexApp">
                 {Header()}
                 <div id="centerContent">
                     <h1 id="title">Cat Corp LLC</h1>
@@ -21,7 +21,7 @@ class IndexApp extends React.Component {
                     <img id="img4" className="img" src="/common/images/srdffd.PNG" alt="Image of Happy Customers Giving A Thumbs Up"></img>
                 </div>
                 {Footer()}
-            </div>
+            </main>
         )
     }
 }

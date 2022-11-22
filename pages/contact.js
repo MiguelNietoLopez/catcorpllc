@@ -102,7 +102,7 @@ class ContactApp extends React.Component{
 
     render(){
         return(
-            <div id="contactApp">
+            <main id="contactApp">
                 {Header()}
                 <h1 id="title">Contact Us</h1>
                 <h3 id="subtitle">Fill out this form and we will get in touch with you</h3>
@@ -118,7 +118,7 @@ class ContactApp extends React.Component{
                     <button id="formButton" onClick={this.submitForm}>Submit</button>
                 </form>
                 {Footer()}
-            </div>
+            </main>
         )
     }
 }

@@ -42,7 +42,7 @@ class SolutionsApp extends React.Component{
     }
     render(){
         return(
-            <div id="solutionsApp">
+            <main id="solutionsApp">
                 {Header()}
                 <div id="centerContent">                   
                     <h1 id="title">Solutions</h1>
@@ -71,7 +71,7 @@ class SolutionsApp extends React.Component{
                     </div>
                 </div>
                 {Footer()}
-            </div>
+            </main>
         )
     }
 }

@@ -11,7 +11,7 @@ class AboutApp extends React.Component{
     }
     render(){
         return(
-            <div id="aboutApp">
+            <main id="aboutApp">
                 {Header()}
                 <div id="centerContent">
                 <h1 id="title">About CatCorp LLC</h1>
@@ -38,7 +38,7 @@ class AboutApp extends React.Component{
                 </p>
                     </div>
                 {Footer()}
-            </div>
+            </main>
         )
     }
 }
