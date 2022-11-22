@@ -10,7 +10,7 @@
     'center'
     'footer';  
 }
-@media screen and (min-width: 769px) {
+@media (min-width: 769px) {
     #centerContent .imgDesc{
     margin-top: 0;
     background-color: rgba(0,0,0,0.1);
@@ -25,7 +25,7 @@
 }
 
 }
-@media screen and (max-width: 768px)
+@media (max-width: 768px)
 {
 
     #centerContent .imgDesc{

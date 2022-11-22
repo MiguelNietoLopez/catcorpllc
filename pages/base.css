@@ -60,7 +60,7 @@ body {
     justify-content: center;
     align-items: center;
     }
-@media screen and (max-width: 768px){
+@media (max-width: 768px){
     #title{
         height: auto;
         width: 100%;
@@ -116,7 +116,7 @@ body {
         font-size: 3vmax;
     }
 }
-@media screen and (min-width: 769px) {
+@media (min-width: 769px) {
     #title{
         height: auto;
         width: 100%;

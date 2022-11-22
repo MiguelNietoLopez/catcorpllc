@@ -61,7 +61,7 @@ class SolutionsApp extends React.Component{
                     </ul>
                     <h2 id="devshowcaseheader" class="header">Developer Showcase</h2>
                     <div id="imgDiv">
-                        <img className="img" src={this.state.devArray[this.state.devArrayPos].imgSrc}></img>
+                        <img className="img" alt="Image of Show Cased Developer"src={this.state.devArray[this.state.devArrayPos].imgSrc}></img>
                         <button className="button" id="leftButton" onClick={() => this.updateDevPos(0)}>{'<'}</button>
                         <button className="button" id="rightButton" onClick={() => this.updateDevPos(1)}>{'>'}</button>
                     </div>
