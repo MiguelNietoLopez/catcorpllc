@@ -64,7 +64,7 @@ body {
     #title{
         height: auto;
         width: 100%;
-        font-size: 8vh;
+        font-size: 7vh;
         text-align: center;
         line-height: 100%;
         margin-top: 10vh;
@@ -73,11 +73,14 @@ body {
     } 
     #subtitle
     {
-        margin: 0;
+        display: flex;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
         text-align: center;
         height: auto;
-        width: 100%;
-        font-size: 4vh;
+        width: 80%;
+        font-size: 3vh;
         line-height: 100%;
         margin-bottom: 10vh;
     }
@@ -97,7 +100,12 @@ body {
     #header {
         height: 10vmax;
     }
-
+    #centerContent .centerText{
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
     #centerContent{
         display: block;
         margin-top: 10vh;
@@ -113,7 +121,7 @@ body {
         margin: auto;
     }
     #header .item {
-        font-size: 3vmax;
+        font-size: 2.5vmax;
     }
 }
 @media (min-width: 769px) {

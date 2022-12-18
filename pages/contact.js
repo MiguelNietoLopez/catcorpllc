@@ -150,9 +150,9 @@ class ContactApp extends React.Component{
         return(
             <main id="contactApp">
                 {Header()}
-                <h1 id="title">Contact Us</h1>
-                <h3 id="subtitle">Fill out this form and we will get in touch with you</h3>
                 <div id="centerContent">
+                    <h1 id="title">Contact Us</h1>
+                    <h3 id="subtitle">Fill out this form and we will get in touch with you</h3>
                     <form id="contactForm">
                         <div id="firstName" className="formDiv">
                             <label id="firstNameLabel" className="label" htmlFor="firstName">First Name </label>

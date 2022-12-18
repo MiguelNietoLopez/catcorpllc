@@ -18,15 +18,21 @@
     background-color:white;
     border: 0;
     height: 3vmax;
-    width: 25%;
+    width: 40vmax;
 }
 #message{
     height: 12vmax;
     resize: none;
 }
 #formButton{
-    background-color:white;
+    margin-top: 10vmax;
+    color:#7AA7D2;
+    background-color: white;
     border: 0;
+    height: 10vmax;
+    width: 40%;
+    line-height: 100%;
+    font-size: 4vmax;
 }
 #formButton:hover {
     background-color: rgba(0, 0, 0, 0.3);
