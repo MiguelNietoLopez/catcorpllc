@@ -1,4 +1,5 @@
 @import '/pages/base.css';
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 #contactApp{
     max-width: 100%;
     margin: 0;
@@ -8,4 +9,41 @@
     'header'
     'center'
     'footer';  
+}
+.formDiv{
+    width:100%;
+    height: 10vmax;
+}
+.inputs{
+    background-color:white;
+    border: 0;
+    height: 3vmax;
+    width: 40vmax;
+}
+#message{
+    height: 12vmax;
+    resize: none;
+}
+#formButton{
+    margin-top: 10vmax;
+    color:#7AA7D2;
+    background-color: white;
+    border: 0;
+    height: 10vmax;
+    width: 40%;
+    line-height: 100%;
+    font-size: 4vmax;
+}
+#formButton:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
+    cursor: pointer;
+}
+.label{
+    width: 100%;
+    height: 10vmax;
+    vertical-align: top;
+}
+#formButton{
+    font-family: 'Roboto', sans-serif;
 }

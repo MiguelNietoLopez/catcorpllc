@@ -42,7 +42,7 @@ class SolutionsApp extends React.Component{
     }
     render(){
         return(
-            <div id="solutionsApp">
+            <main id="solutionsApp">
                 {Header()}
                 <div id="centerContent">                   
                     <h1 id="title">Solutions</h1>
@@ -61,7 +61,7 @@ class SolutionsApp extends React.Component{
                     </ul>
                     <h2 id="devshowcaseheader" class="header">Developer Showcase</h2>
                     <div id="imgDiv">
-                        <img className="img" src={this.state.devArray[this.state.devArrayPos].imgSrc}></img>
+                        <img className="img" alt="Image of Show Cased Developer"src={this.state.devArray[this.state.devArrayPos].imgSrc}></img>
                         <button className="button" id="leftButton" onClick={() => this.updateDevPos(0)}>{'<'}</button>
                         <button className="button" id="rightButton" onClick={() => this.updateDevPos(1)}>{'>'}</button>
                     </div>
@@ -71,7 +71,7 @@ class SolutionsApp extends React.Component{
                     </div>
                 </div>
                 {Footer()}
-            </div>
+            </main>
         )
     }
 }

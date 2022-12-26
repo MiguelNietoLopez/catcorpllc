@@ -1,4 +1,5 @@
 @import '/pages/base.css';
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 #solutionsApp {
     max-width: 100%;
     margin: 0;
@@ -10,8 +11,8 @@
     'footer';  
 }
 .button {
-    height: 40vmax;
-    width: 18.75vmax;
+    height: 40vmax;    
+    width: 25%;
     position: absolute;
     top: 0;
     background-color: rgba(1,1,1,0);
@@ -23,12 +24,12 @@
     color: rgba(255, 255, 255, 0.4);
 }
 #leftButton{
-    transform: translate(-37.6vmax, 0);
-    -ms-transform: translate(-37.6vmax, 0);
-}
+    transform: translate(-161%, 0);
+    -ms-transform: translate(-161%, 0);
+} 
 #rightButton{
-    transform: translate(18.75vmax, 0);
-    -ms-transform: translate(18.75vmax, 0); 
+    transform: translate(61%, 0);
+    -ms-transform: translate(61%, 0); 
 }
 #imgDiv {
     position: relative;

@@ -11,10 +11,11 @@ class AboutApp extends React.Component{
     }
     render(){
         return(
-            <div id="aboutApp">
+            <main id="aboutApp">
                 {Header()}
                 <div id="centerContent">
                 <h1 id="title">About CatCorp LLC</h1>
+                <h2></h2>
                 <h3 id="subtitle" className="header">Our History</h3>
                 <p id="historyPara" className="centerText">
                         CatCorpLLC was founded in 1305 by Gregory Von Johnsonsmithersonottenbotten 
@@ -37,7 +38,7 @@ class AboutApp extends React.Component{
                 </p>
                     </div>
                 {Footer()}
-            </div>
+            </main>
         )
     }
 }
