@@ -163,7 +163,7 @@ class ContactApp extends React.Component{
                             <input type="text" name="lastName"  className="inputs" onInput={this.lastNameHandler}></input>
                         </div>
                         <div id="email" className="formDiv">
-                            <label id="emailLabel" htmlFor="email" >Email </label>
+                            <label className="label" id="emailLabel" htmlFor="email" >Email </label>
                             <input className="inputs" types="email" name="email" onInput={this.emailHandler}></input>
                         </div>
                         <div id="message" className="formDiv">

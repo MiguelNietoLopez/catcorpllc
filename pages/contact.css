@@ -20,6 +20,7 @@
     height: 3vmax;
     width: 40vmax;
 }
+
 #message{
     height: 12vmax;
     resize: none;
@@ -40,10 +41,17 @@
     cursor: pointer;
 }
 .label{
-    width: 100%;
-    height: 10vmax;
+    display: inline-block;
+    width: 15.5vmax;
     vertical-align: top;
 }
 #formButton{
     font-family: 'Roboto', sans-serif;
+}
+#contactForm{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
 }
