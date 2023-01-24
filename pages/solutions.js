@@ -59,7 +59,7 @@ class SolutionsApp extends React.Component{
                         <li className="webdevelopmentlistitem">CI/CD</li>
                         <li className="webdevelopmentlistitem">Full Stack</li>
                     </ul>
-                    <h2 id="devshowcaseheader" class="header">Developer Showcase</h2>
+                    <h2 id="devshowcaseheader" className="header">Developer Showcase</h2>
                     <div id="imgDiv">
                         <img className="img" alt="Image of Show Cased Developer"src={this.state.devArray[this.state.devArrayPos].imgSrc}></img>
                         <button className="button" id="leftButton" onClick={() => this.updateDevPos(0)}>{'<'}</button>
@@ -76,4 +76,5 @@ class SolutionsApp extends React.Component{
     }
 }
 
-ReactDOM.render(<SolutionsApp />, document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(<SolutionsApp />)

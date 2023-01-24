@@ -43,4 +43,5 @@ class AboutApp extends React.Component{
     }
 }
 
-ReactDOM.render(<AboutApp />, document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(<AboutApp />)

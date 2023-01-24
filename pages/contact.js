@@ -180,4 +180,5 @@ class ContactApp extends React.Component{
     }
 }
 
-ReactDOM.render(<ContactApp />, document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(<ContactApp />)

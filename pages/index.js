@@ -25,4 +25,5 @@ class IndexApp extends React.Component {
         )
     }
 }
-ReactDOM.render(<IndexApp />, document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(<IndexApp />);
