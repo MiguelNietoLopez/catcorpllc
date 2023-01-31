@@ -2,7 +2,7 @@
   "name": "catcorpllc",
   "version": "1.0.0",
   "description": "catcorpllc website",
-  "main": "server.js",
+  "private": true,
   "repository": {
     "type": "git",
     "url": "git+https://github.com/MiguelNietoLopez/catcorpllc.git"
@@ -14,6 +14,7 @@
   },
   "homepage": "https://github.com/MiguelNietoLopez/catcorpllc#readme",
   "dependencies": {
+    "babel-loader": "^9.1.2",
     "debug": "^4.3.4",
     "express": "^4.18.2",
     "minimist": "^1.2.7",
