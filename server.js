@@ -12,32 +12,32 @@ app.get('/about', (req, res) => {
     res.sendFile(__dirname + '/pages/about.html');
 })
 app.get('/pages/index.js', (req, res) => {
-    res.setHeader("Content-Type", "text/babel");
-    res.sendFile(__dirname + '/pages/index.js');
+    res.setHeader('Content-Type', 'text/javascript');
+    res.sendFile(__dirname + '/dist/home.bndl.js');
 });
 app.get('/pages/index.css', (req, res) => {
     res.setHeader("Content-Type", 'text/css');
     res.sendFile(__dirname + '/pages/index.css')
 });
 app.get('/pages/about.js', (req,res) => {
-    res.setHeader("Content-Type", 'text/babel');
-    res.sendFile(__dirname + '/pages/about.js');
+    res.setHeader('Content-Type', 'text/javascript');
+    res.sendFile(__dirname + '/dist/about.bndl.js');
 })
 app.get('/contact', (req, res) => {
     res.setHeader('Content-Type', 'text/html');
     res.sendFile(__dirname + '/pages/contact.html')
 })
 app.get('/pages/contact.js', (req, res) => {
-    res.setHeader('Content-Type', 'text/babel');
-    res.sendFile(__dirname + '/pages/contact.js');
+    res.setHeader('Content-Type', 'text/javascript');
+    res.sendFile(__dirname + '/dist/contact.bndl.js');
 })
 app.get('/solutions', (req, res) => {
     res.setHeader('Content-Type', 'text/html');
     res.sendFile(__dirname + '/pages/solutions.html')
 })
 app.get('/pages/solutions.js', (req, res) => {
-    res.setHeader('Content-Type', 'text/html');
-    res.sendFile(__dirname + '/pages/solutions.js')
+    res.setHeader('Content-Type', 'text/javascript');
+    res.sendFile(__dirname + '/dist/solutions.bndl.js')
 })
 app.get(/.common/, (req, res) => {
     console.log(req.path);
