@@ -1,7 +1,3 @@
-import React from "react";
-import ReactDOM from "react-dom";
-import Header from "../common/header";
-import Footer from "../common/footer";
 class IndexApp extends React.Component {
     constructor(props)
     {

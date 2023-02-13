@@ -3,41 +3,8 @@ var fs = require('fs');
 var url = require('url'); 
 var app = express();
 app.use(express.json());
-app.get('/', function(req, res) {
-    res.setHeader('Content-Type', 'text/html');
-    res.sendFile(__dirname + '/pages/index.html');
-});
-app.get('/about', (req, res) => {
-    res.setHeader('Content-Type', 'text/html');
-    res.sendFile(__dirname + '/pages/about.html');
-})
-app.get('/pages/index.js', (req, res) => {
-    res.setHeader('Content-Type', 'text/javascript');
-    res.sendFile(__dirname + '/dist/home.bndl.js');
-});
-app.get('/pages/index.css', (req, res) => {
-    res.setHeader("Content-Type", 'text/css');
-    res.sendFile(__dirname + '/pages/index.css')
-});
-app.get('/pages/about.js', (req,res) => {
-    res.setHeader('Content-Type', 'text/javascript');
-    res.sendFile(__dirname + '/dist/about.bndl.js');
-})
-app.get('/contact', (req, res) => {
-    res.setHeader('Content-Type', 'text/html');
-    res.sendFile(__dirname + '/pages/contact.html')
-})
-app.get('/pages/contact.js', (req, res) => {
-    res.setHeader('Content-Type', 'text/javascript');
-    res.sendFile(__dirname + '/dist/contact.bndl.js');
-})
-app.get('/solutions', (req, res) => {
-    res.setHeader('Content-Type', 'text/html');
-    res.sendFile(__dirname + '/pages/solutions.html')
-})
-app.get('/pages/solutions.js', (req, res) => {
-    res.setHeader('Content-Type', 'text/javascript');
-    res.sendFile(__dirname + '/dist/solutions.bndl.js')
+app.get('/', (req, res) => {
+    res.sendFile(__dirname + `/pages/index.html`);
 })
 app.get(/.common/, (req, res) => {
     console.log(req.path);
@@ -50,8 +17,8 @@ app.get(/.common/, (req, res) => {
     }
     
 })
-app.get(/.pages/, (req, res) => {
-    console.log(req.path);
+app.get(/.pages\/\w+\.(js|css|ico|png|jpg)$/, (req, res) => {
+    console.log(__dirname + req.path)
     if(fs.existsSync(__dirname + req.path) == true)
     {
         res.sendFile(__dirname + req.path);
