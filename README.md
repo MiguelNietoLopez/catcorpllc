@@ -1,7 +1,8 @@
 Cat Corp LLC.
 ================
-
-Currently Deployed at: https://catcorpllc.miguelnlopez.repl.co/
+GO to:
+https://replit.com/@MiguelNLopez/catcorpllc#README.md
+for an online version
 
 (be aware that repl limits resources for free users)
 
