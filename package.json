@@ -4,9 +4,6 @@
   "description": "catcorpllc website",
   "private": true,
   "main": "server.js",
-  "engines": {
-    "node": "14.x"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/MiguelNietoLopez/catcorpllc.git"
