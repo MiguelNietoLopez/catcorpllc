@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "catcorpllc website",
   "private": true,
+  "main": "server.js",
+  "engines": {
+    "node": "14.x"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/MiguelNietoLopez/catcorpllc.git"
@@ -24,7 +28,7 @@
     "react-dom": "^18.2.0"
   },
   "scripts": {
-    "dev": "node server.js"
+    "start": "node server.js"
   },
   "devDependencies": {
     "@babel/preset-env": "^7.18.2",
