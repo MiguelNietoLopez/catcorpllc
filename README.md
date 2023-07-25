@@ -3,8 +3,6 @@ Cat Corp LLC.
 
 Currently Deployed at: https://catcorpllc.miguelnlopez.repl.co/
 
-(be aware that repl limits resources for free users)
-
 ================
 for License information please read the included license
 ================
