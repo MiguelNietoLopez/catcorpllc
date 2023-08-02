@@ -1,7 +1,7 @@
 Cat Corp LLC.
 ================
-
-Currently Deployed at: https://catcorpllc.miguelnlopez.repl.co/
+UPDATED HOSTING:
+https://catcorpllc-serverless.vercel.app/solutions
 
 ================
 for License information please read the included license
